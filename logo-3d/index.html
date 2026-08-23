@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Logo 3D — Dourado & Bordô</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+          "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <canvas id="logo-canvas"></canvas>
+    <aside class="panel">
+      <h1>Logo 3D</h1>
+      <p>Visualização tridimensional com espessura uniforme em todos os traçados. Arraste para rotacionar, scroll para zoom.</p>
+      <div class="legend">
+        <span class="gold"><i></i> Dourado</span>
+        <span class="burgundy"><i></i> Bordô</span>
+      </div>
+      <button id="toggle-animate" type="button">Pausar rotação</button>
+      <button id="export-png" type="button">Exportar PNG</button>
+    </aside>
+    <script type="module" src="./js/scene.js"></script>
+  </body>
+</html>
